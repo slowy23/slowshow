@@ -1,0 +1,42 @@
+@layer base {
+    .font-custom {
+        font-family: -apple-system, BlinkMacSystemFont, Roboto, Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 13px;
+    }
+}
+
+.nav-tab-active::after{
+    content: "";
+    position: absolute;
+    border-bottom:3px solid #E04E1F;
+    width: 100%;
+    height: 0;
+    bottom: -9px;
+    left: 0;
+}
+
+.pagination{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.pagination li a{
+    background-color: #fff;
+    transition: all o.3s ease;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 13px;
+}
+
+.pagination li a:hover{
+    background-color: #dfdfdf;
+}
+
+.pagination li.active a{
+    background-color: #009beb;
+    color: #fff;
+}
